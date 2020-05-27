@@ -9,6 +9,9 @@ app.get('/', function(req, res) {
 	res.sendFile("static/index.html");
 });
 
+app.get('/second', function(req, res) {
+	res.send("Error you are on an outdated version of the server");
+});
 
 var server = app.listen(8080, function() {
 	console.log("Server listening");
